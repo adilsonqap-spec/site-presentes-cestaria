@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cestas Personalizadas em Santa Maria RS | M&M</title>
+    <meta name="description" content="Surpreenda com cestas personalizadas e presentes afetivos em Santa Maria RS. Kits corporativos exclusivos sob encomenda.">
+    
+    <!-- SEO Tags -->
+    <link rel="canonical" href="https://presentes.fun/">
+    <meta name="keywords" content="cestas personalizadas em Santa Maria RS, presentes personalizados Santa Maria, cestas para presente Santa Maria, kits personalizados para datas especiais, cestas corporativas Santa Maria">
+    <meta name="author" content="M & M Ateliê e Cestaria">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cestas Personalizadas em Santa Maria RS | M&M">
+    <meta property="og:description" content="Surpreenda com cestas personalizadas e presentes afetivos em Santa Maria RS. Kits corporativos exclusivos sob encomenda.">
+    <meta property="og:image" content="https://presentes.fun/assets/img/hero-bg.webp">
+    <meta property="og:url" content="https://presentes.fun/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cestas Personalizadas em Santa Maria RS | M&M">
+    <meta name="twitter:description" content="Surpreenda com cestas personalizadas e presentes afetivos em Santa Maria RS. Kits corporativos exclusivos sob encomenda.">
+    <meta name="twitter:image" content="https://presentes.fun/assets/img/hero-bg.webp">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7A9E7E',
+                        'primary-dark': '#618565',
+                        secondary: '#D4A373',
+                        'secondary-dark': '#B88A5B',
+                        fundo: '#F9FAFB',
+                        texto: '#111827',
+                        'texto-light': '#4B5563'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://presentes.fun/#organization",
+          "name": "M & M Ateliê e Cestaria",
+          "url": "https://presentes.fun/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://presentes.fun/assets/img/logo.png"
+          },
+          "image": "https://presentes.fun/assets/img/logo.png",
+          "sameAs": [
+            "https://instagram.com/as.midia.digital"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://presentes.fun/#localbusiness",
+          "name": "M & M Ateliê e Cestaria",
+          "image": "https://presentes.fun/assets/img/hero-bg.webp",
+          "url": "https://presentes.fun/",
+          "telephone": "+55555996695492",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Maria",
+            "addressRegion": "RS",
+            "addressCountry": "BR",
+            "streetAddress": "Camobi"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "19:00"
+          },
+          "priceRange": "$$",
+          "areaServed": "Santa Maria e região (Camobi)"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://presentes.fun/#website",
+          "url": "https://presentes.fun/",
+          "name": "M & M Ateliê e Cestaria",
+          "publisher": {
+            "@id": "https://presentes.fun/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://presentes.fun/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quanto custa uma cesta personalizada em Santa Maria RS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nossos valores variam conforme os itens escolhidos e o tamanho da cesta. Temos opções para diferentes orçamentos. Fale no WhatsApp para montarmos algo focado no valor que você deseja investir."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês fazem cestas totalmente personalizadas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim! Cada cesta é única. Você pode nos dizer o que a pessoa gosta (doces, salgados, bebidas, itens de cuidado pessoal) e nós montamos especialmente para ela."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual o prazo de produção das cestas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pedimos encomendar com pelo menos 48h de antecedência para garantir a personalização e frescor dos itens. Para datas comemorativas (Dia das Mães, Namorados), reserve quanto antes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês entregam em Camobi e outros bairros de Santa Maria?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, realizamos entregas focadas em Camobi e na região de Santa Maria. A taxa de entrega é calculada com base no endereço destinatário. Consulte no momento do pedido."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês fazem cestas para empresas (corporativo)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Com certeza. Oferecemos kits padronizados de excelente custo-benefício para brindes a funcionários e clientes. Montamos orçamentos sob medida para empresas."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "name": "Cestas Personalizadas",
+          "description": "Cestas montadas sob medida para datas especiais como aniversários, Dia das Mães, Dia dos Namorados e outras ocasiões.",
+          "provider": {
+            "@id": "https://presentes.fun/#localbusiness"
+          },
+          "areaServed": "Santa Maria e região (Camobi)"
+        },
+        {
+          "@type": "Service",
+          "name": "Presentes Sob Medida",
+          "description": "Montagem exclusiva de presentes personalizados conforme o perfil e gosto da pessoa presenteada.",
+          "provider": {
+            "@id": "https://presentes.fun/#localbusiness"
+          },
+          "areaServed": "Santa Maria e região (Camobi)"
+        },
+        {
+          "@type": "Service",
+          "name": "Kits Corporativos",
+          "description": "Cestas e kits personalizados para empresas, ideais para clientes, colaboradores e ações comemorativas.",
+          "provider": {
+            "@id": "https://presentes.fun/#localbusiness"
+          },
+          "areaServed": "Santa Maria e região (Camobi)"
+        },
+        {
+          "@type": "Service",
+          "name": "Boxes e Mimos Personalizados",
+          "description": "Caixas e lembranças criativas com acabamento artesanal e toque emocional.",
+          "provider": {
+            "@id": "https://presentes.fun/#localbusiness"
+          },
+          "areaServed": "Santa Maria e região (Camobi)"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://presentes.fun/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://presentes.fun/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-fundo text-texto font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#hero" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                        <!-- Placeholder Logo Text -->
+                        <span class="text-primary">M & M</span> Ateliê
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#servicos" class="text-texto-light hover:text-primary transition-colors font-medium">Serviços</a>
+                    <a href="#sobre" class="text-texto-light hover:text-primary transition-colors font-medium">Quem Somos</a>
+                    <a href="#faq" class="text-texto-light hover:text-primary transition-colors font-medium">Dúvidas</a>
+                    <a href="#contato" class="text-texto-light hover:text-primary transition-colors font-medium">Contato</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-primary/30 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.876 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-texto hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" style="display: none;" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white border-t border-gray-100" style="display: none;">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a @click="mobileMenuOpen = false" href="#servicos" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Serviços</a>
+                <a @click="mobileMenuOpen = false" href="#sobre" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Quem Somos</a>
+                <a @click="mobileMenuOpen = false" href="#faq" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Dúvidas Frequentes</a>
+                <a @click="mobileMenuOpen = false" href="#contato" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Contato</a>
+                <div class="pt-4">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="w-full flex justify-center items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md font-medium">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M...Z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="/assets/img/hero-bg.webp" alt="Cestas artesanais e presentes em Santa Maria" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-2xl">
+                    <span class="inline-block py-1 px-3 rounded-full bg-secondary/20 text-secondary-dark text-sm font-semibold tracking-wide mb-4 uppercase">
+                        Presentes que emocionam
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-texto">
+                        Cestas Personalizadas em Santa Maria RS para Presentes Especiais
+                    </h1>
+                    <p class="text-lg md:text-xl text-texto-light mb-8 font-light leading-relaxed">
+                        Surpreenda quem você ama com presentes únicos e acolhedores. Montamos cestas exclusivas sob medida para aniversários, datas comemorativas e ações corporativas na região de Camobi.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-semibold transition-all shadow-xl shadow-primary/20 hover:scale-105">
+                            Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="inline-flex justify-center items-center bg-transparent border-2 border-primary text-primary hover:bg-primary/5 px-8 py-4 rounded-full font-semibold transition-all">
+                            Conhecer nossos serviços
+                        </a>
+                    </div>
+                    <p class="text-sm text-texto-light">* Atendimento humanizado e personalizado do início ao fim.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Barra de Credibilidade -->
+        <section id="credibilidade" class="bg-primary text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-primary-dark/50">
+                    <div class="px-4">
+                        <p class="text-3xl font-serif font-bold mb-2">100%</p>
+                        <p class="text-sm font-medium opacity-90">Personalização Exclusiva</p>
+                    </div>
+                    <div class="px-4">
+                        <p class="text-3xl font-serif font-bold mb-2">+500</p>
+                        <p class="text-sm font-medium opacity-90">Clientes Satisfeitos</p>
+                    </div>
+                    <div class="px-4">
+                        <p class="text-3xl font-serif font-bold mb-2">Artesanal</p>
+                        <p class="text-sm font-medium opacity-90">Acabamento Premium</p>
+                    </div>
+                    <div class="px-4">
+                        <p class="text-3xl font-serif font-bold mb-2">Local</p>
+                        <p class="text-sm font-medium opacity-90">Atendimento em Camobi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sobre Nos -->
+        <section id="sobre" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <img src="/assets/img/sobre.webp" alt="Mãos preparando uma cesta afetiva" class="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-xl shadow-xl hidden md:block">
+                            <p class="font-serif font-bold text-xl">Amor em cada</p>
+                            <p class="font-serif font-bold text-xl">detalhe</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Nossa Essência</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Criando memórias através de presentes afetivos</h2>
+                        <div class="space-y-4 text-texto-light text-lg mb-8 leading-relaxed">
+                            <p>
+                                Na <strong class="text-texto">M & M Ateliê e Cestaria</strong>, acreditamos que um presente vai muito além do objeto em si. É uma forma de abraçar à distância, de comemorar conquistas e de eternizar momentos especiais.
+                            </p>
+                            <p>
+                                Localizados na região de Camobi, em Santa Maria, trabalhamos com produção artesanal e atendimento humanizado. Cada pedido é montado de forma única, com um acabamento premium e estética sofisticada que surpreendem quem recebe.
+                            </p>
+                            <p>
+                                Seja para surpreender alguém querido ou para encantar clientes da sua empresa, nós traduzimos o seu sentimento em presentes inesquecíveis.
+                            </p>
+                        </div>
+                        <a href="#contato" class="inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors gap-2 text-lg">
+                            Fale conosco
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Serviços -->
+        <section id="servicos" class="py-24 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Nossos Serviços</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Cestas e presentes personalizados para todas as ocasiões</h2>
+                    <p class="text-texto-light text-lg">Descubra as opções ideais para emocionar quem você ama ou valorizar os relacionamentos da sua empresa.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Servico 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group flex flex-col h-full">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="/assets/img/servico-1.webp" alt="Cestas personalizadas prontas para presentes em datas especiais em Santa Maria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold font-serif text-texto mb-3">Cestas personalizadas para datas especiais</h3>
+                            <p class="text-texto-light mb-6 flex-1">Cestas montadas sob medida para aniversários, Dia das Mães, Dia dos Namorados e ocasiões que merecem ser lembradas.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-primary font-bold hover:text-primary-dark transition-colors inline-flex items-center gap-1">
+                                Falar no WhatsApp <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group flex flex-col h-full">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="/assets/img/servico-2.webp" alt="Presente sob medida exclusivo e sofisticado montado pelo ateliê" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold font-serif text-texto mb-3">Presentes sob medida exclusivos</h3>
+                            <p class="text-texto-light mb-6 flex-1">Montagem exclusiva de presentes personalizados conforme o perfil, gosto e estilo da pessoa presenteada.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-primary font-bold hover:text-primary-dark transition-colors inline-flex items-center gap-1">
+                                Falar no WhatsApp <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group flex flex-col h-full">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="/assets/img/servico-3.webp" alt="Kits e cestas corporativas para presentes a empresas e funcionários" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold font-serif text-texto mb-3">Kits corporativos personalizados</h3>
+                            <p class="text-texto-light mb-6 flex-1">Cestas e kits personalizados para empresas, ideais para clientes, colaboradores e ações comemorativas.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-primary font-bold hover:text-primary-dark transition-colors inline-flex items-center gap-1">
+                                Falar no WhatsApp <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servico 4 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group flex flex-col h-full">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="/assets/img/servico-4.webp" alt="Boxes e mimos artesanais com acabamento premium e laços fita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold font-serif text-texto mb-3">Boxes e mimos personalizados</h3>
+                            <p class="text-texto-light mb-6 flex-1">Caixas e lembranças criativas ricas em detalhes, com acabamento artesanal de alto padrão e toque emocional.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-primary font-bold hover:text-primary-dark transition-colors inline-flex items-center gap-1">
+                                Falar no WhatsApp <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <p class="text-lg text-texto-light mb-6">Pronto para montar o seu presente inesquecível?</p>
+                    <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-semibold transition-transform hover:scale-105 shadow-xl shadow-primary/20">
+                        Personalizar minha cesta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Beneficios -->
+        <section id="beneficios" class="py-24 bg-white relative overflow-hidden">
+            <!-- Decorative circle -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-fundo rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-secondary-dark font-bold tracking-wider uppercase text-sm mb-4 block">Diferenciais M & M</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Presentes personalizados que emocionam em Santa Maria</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div class="bg-fundo p-8 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Personalização completa</h3>
+                        <p class="text-texto-light">Cada pedido é único. Você escolhe os itens, cores e o estilo para que o presente seja a cara de quem vai receber.</p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-fundo p-8 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-secondary/10 text-secondary-dark rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Acabamento premium</h3>
+                        <p class="text-texto-light">Mais que uma cesta, uma estética sofisticada. Nossos laços, fitas e caixas transformam o presente em uma experiência visual.</p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-fundo p-8 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.514"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Atendimento humanizado</h3>
+                        <p class="text-texto-light">Estar perto faz diferença. Atendimento próximo desde a primeira mensagem até o momento da entrega.</p>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="bg-fundo p-8 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-secondary/10 text-secondary-dark rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Produção artesanal</h3>
+                        <p class="text-texto-light">Cada laço é feito à mão, com alto padrão de cuidado e dedicação aos detalhes.</p>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="bg-fundo p-8 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Experiência emocional</h3>
+                        <p class="text-texto-light">Acreditamos que não entregamos apenas um presente, mas sim abraços, sorrisos e lágrimas de alegria.</p>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="bg-fundo p-8 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-secondary/10 text-secondary-dark rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Individual e Corporativo</h3>
+                        <p class="text-texto-light">Soluções perfeitas tanto para surpreender uma pessoa especial quanto para encantar clientes da sua empresa.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="#como-funciona" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-semibold transition-transform hover:scale-105 shadow-xl shadow-primary/20">
+                        Quero montar meu presente
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Como Funciona -->
+        <section id="como-funciona" class="py-24 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Processo Simples</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Monte sua cesta personalizada do seu jeito</h2>
+                    <p class="text-texto-light text-lg">Um passo a passo fácil para criar o presente perfeito sem complicações.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                    <!-- Linha conectora (Desktop) -->
+                    <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-primary/10 via-primary/30 to-primary/10 z-0"></div>
+
+                    <!-- Passo 1 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-24 h-24 bg-white rounded-full shadow-lg shadow-primary/10 flex items-center justify-center text-3xl font-serif font-bold text-primary mx-auto mb-6 border-4 border-fundo">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Escolha os itens</h3>
+                        <p class="text-texto-light">Entre em contato via WhatsApp e conte um pouco sobre o gosto da pessoa presenteada.</p>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-24 h-24 bg-white rounded-full shadow-lg shadow-primary/10 flex items-center justify-center text-3xl font-serif font-bold text-primary mx-auto mb-6 border-4 border-fundo">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Defina o estilo</h3>
+                        <p class="text-texto-light">Escolheremos juntos a caixa, cesta, fitas e o estilo de acabamento premium ideal.</p>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-24 h-24 bg-white rounded-full shadow-lg shadow-primary/10 flex items-center justify-center text-3xl font-serif font-bold text-primary mx-auto mb-6 border-4 border-fundo">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-texto mb-3">Surpreenda</h3>
+                        <p class="text-texto-light">Nós montamos com todo o carinho e entregamos na região de Santa Maria.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg shadow-primary/10">
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Depoimentos -->
+        <section id="depoimentos" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-secondary-dark font-bold tracking-wider uppercase text-sm mb-4 block">Prova Social</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Clientes que já surpreenderam com nossos presentes</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Depoimento 1 -->
+                    <div class="bg-fundo p-8 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-primary/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex items-center gap-2 text-yellow-400 mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-texto-light mb-6 italic">"O atendimento foi perfeito do início ao fim! Comprei uma cesta para minha mãe e ela chorou de emoção. Tudo milimetricamente pensado, os produtos deliciosos e o cuidado na montagem é fora de série."</p>
+                        <div class="flex items-center gap-4">
+                            <div>
+                                <h3 class="font-bold text-texto text-base">Cliente Satisfeito</h3>
+                                <span class="text-sm text-gray-500">Santa Maria - RS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="bg-fundo p-8 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-primary/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex items-center gap-2 text-yellow-400 mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-texto-light mb-6 italic">"Pedi um kit corporativo para o final de ano da minha empresa. O resultado superou as expectativas. Os parceiros amaram o mimo, com certeza faremos de novo esse ano. Trabalho fantástico!"</p>
+                        <div class="flex items-center gap-4">
+                            <div>
+                                <h3 class="font-bold text-texto text-base">Cliente Satisfeito</h3>
+                                <span class="text-sm text-gray-500">Camobi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="bg-fundo p-8 rounded-2xl relative shadow-sm hover:shadow-md transition-shadow">
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-primary/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex items-center gap-2 text-yellow-400 mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-texto-light mb-6 italic">"A cesta de Dia dos Namorados foi impecável! Percebe-se que foi montada especialmente pro meu namorado, e ele amou o box que não é só bonito mas cheio de significado."</p>
+                        <div class="flex items-center gap-4">
+                            <div>
+                                <h3 class="font-bold text-texto text-base">Cliente Satisfeito</h3>
+                                <span class="text-sm text-gray-500">Santa Maria - RS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-semibold transition-transform hover:scale-105 shadow-xl shadow-primary/20">
+                        Quero pedir o meu
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Area de Atuação -->
+        <section id="area-atuacao" class="bg-primary text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-serif font-bold mb-4">Cestas Personalizadas em Santa Maria e Camobi</h2>
+                        <p class="text-lg opacity-90 mb-6 leading-relaxed">
+                            Atendemos sob encomenda em <strong>Santa Maria - RS</strong>, com foco especial na região de <strong class="text-secondary">Camobi</strong> e bairros próximos. 
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <svg class="w-6 h-6 mt-1 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <div>
+                                    <h3 class="font-bold">Local</h3>
+                                    <p class="opacity-80">Atendimento sob encomenda em Santa Maria – RS (região de Camobi)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg class="w-6 h-6 mt-1 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h3 class="font-bold">Horário</h3>
+                                    <p class="opacity-80">Segunda a Sábado: 08:00 às 19:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 w-full">
+                        <!-- Placeholder do Mapa -->
+                        <div class="bg-primary-dark/50 w-full h-80 rounded-2xl flex items-center justify-center border-2 border-primary-dark/30 shadow-inner">
+                            <div class="text-center p-6">
+                                <svg class="w-12 h-12 mx-auto text-white/50 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                                <p class="text-white/70 font-medium">Placeholder para Google Maps iframe<br>(Adicionar código html do mapa aqui)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ -->
+        <section id="faq" class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Tire suas dúvidas</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Dúvidas frequentes sobre cestas personalizadas em Santa Maria</h2>
+                </div>
+
+                <div class="space-y-4" x-data="{ selected: null }">
+                    <!-- FAQ 1 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden transition-all duration-300" :class="{ 'ring-2 ring-primary/20 bg-fundo': selected === 1 }">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none">
+                            <span class="font-bold text-texto pr-8">Quanto custa uma cesta personalizada em Santa Maria RS?</span>
+                            <svg class="w-5 h-5 text-primary transform transition-transform duration-300" :class="{'rotate-180': selected === 1}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div x-show="selected === 1" x-collapse style="display: none;">
+                            <div class="px-6 pb-5 text-texto-light">
+                                Nossos valores variam conforme os itens escolhidos e o tamanho da cesta. Temos opções para diferentes orçamentos. Fale no WhatsApp para montarmos algo focado no valor que você deseja investir.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden transition-all duration-300" :class="{ 'ring-2 ring-primary/20 bg-fundo': selected === 2 }">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none">
+                            <span class="font-bold text-texto pr-8">Vocês fazem cestas totalmente personalizadas?</span>
+                            <svg class="w-5 h-5 text-primary transform transition-transform duration-300" :class="{'rotate-180': selected === 2}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div x-show="selected === 2" x-collapse style="display: none;">
+                            <div class="px-6 pb-5 text-texto-light">
+                                Sim! Cada cesta é única. Você pode nos dizer o que a pessoa gosta (doces, salgados, bebidas, itens de cuidado pessoal) e nós montamos especialmente para ela.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden transition-all duration-300" :class="{ 'ring-2 ring-primary/20 bg-fundo': selected === 3 }">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none">
+                            <span class="font-bold text-texto pr-8">Qual o prazo de produção das cestas?</span>
+                            <svg class="w-5 h-5 text-primary transform transition-transform duration-300" :class="{'rotate-180': selected === 3}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div x-show="selected === 3" x-collapse style="display: none;">
+                            <div class="px-6 pb-5 text-texto-light">
+                                Pedimos encomendar com pelo menos 48h de antecedência para garantir a personalização e frescor dos itens. Para datas comemorativas (Dia das Mães, Namorados), reserve quanto antes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden transition-all duration-300" :class="{ 'ring-2 ring-primary/20 bg-fundo': selected === 4 }">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none">
+                            <span class="font-bold text-texto pr-8">Vocês entregam em Camobi e outros bairros de Santa Maria?</span>
+                            <svg class="w-5 h-5 text-primary transform transition-transform duration-300" :class="{'rotate-180': selected === 4}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div x-show="selected === 4" x-collapse style="display: none;">
+                            <div class="px-6 pb-5 text-texto-light">
+                                Sim, realizamos entregas focadas em Camobi e na região de Santa Maria. A taxa de entrega é calculada com base no endereço destinatário. Consulte no momento do pedido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden transition-all duration-300" :class="{ 'ring-2 ring-primary/20 bg-fundo': selected === 5 }">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none">
+                            <span class="font-bold text-texto pr-8">Vocês fazem cestas para empresas (corporativo)?</span>
+                            <svg class="w-5 h-5 text-primary transform transition-transform duration-300" :class="{'rotate-180': selected === 5}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div x-show="selected === 5" x-collapse style="display: none;">
+                            <div class="px-6 pb-5 text-texto-light">
+                                Com certeza. Oferecemos kits padronizados de excelente custo-benefício para brindes a funcionários e clientes. Montamos orçamentos sob medida para empresas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-texto-light mb-4">Ainda com dúvidas?</p>
+                    <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors gap-2 text-lg">
+                        Fale no WhatsApp
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Contato / CTA Final -->
+        <section id="contato" class="relative py-32 bg-fundo overflow-hidden">
+            <!-- Background Decorative Elements -->
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-primary/5 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-secondary/5 rounded-full filter blur-3xl"></div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary-dark text-sm font-semibold tracking-wide mb-4 uppercase">
+                    Últimos pedidos abertos
+                </span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-texto mb-6">Peça sua cesta personalizada em Santa Maria agora</h2>
+                <p class="text-xl text-texto-light mb-10 max-w-2xl mx-auto">
+                    Não deixe para a última hora. Garanta o presente ideal e proporcione um momento inesquecível para quem você ama.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl shadow-primary/30 hover:-translate-y-1 gap-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.876 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Falar no WhatsApp agora
+                    </a>
+                    <a href="tel:+5555996695492" class="w-full sm:w-auto inline-flex justify-center items-center bg-white border-2 border-primary text-primary hover:bg-primary/5 px-10 py-5 rounded-full font-bold text-lg transition-all gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        Ligar (55) 99669-5492
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-texto-light flex items-center justify-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-green-500 inline-block"></span>
+                    Respondemos em até 30 minutos em horário comercial
+                </p>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-texto text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-2xl font-serif font-bold text-primary mb-4">M & M Ateliê</h2>
+                    <p class="text-gray-400 mb-6 max-w-sm">Cestas personalizadas e presentes afetivos feitos com dedicação em Santa Maria - RS.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/as.midia.digital" target="_blank" class="text-gray-400 hover:text-primary transition-colors">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 font-serif">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white transition-colors">Quem Somos</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">Dúvidas Frequentes</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 font-serif">Contato</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold text-white">Endereço:</span>
+                            Atendimento sob encomenda em Santa Maria – RS (região de Camobi)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="font-bold text-white">Whats:</span>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="hover:text-primary transition-colors">(55) 99669-5492</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="font-bold text-white">Horário:</span>
+                            Seg até Sáb, 08:00 às 19:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> M & M Ateliê e Cestaria. Todos os direitos reservados.</p>
+                <p>Desenvolvido por A&S Midia Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5555996695492" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" aria-label="Falar no WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.876 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+</body>
+</html>
