@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentes Sob Medida Exclusivos | M&M Ateliê e Cestaria Santa Maria RS</title>
+    <meta name="description" content="Montagem exclusiva de presentes personalizados em Santa Maria RS. Curadoria de itens premium e embalagens de luxo para gestos inesquecíveis.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo-floral-nova.png">
+    <link rel="apple-touch-icon" href="img/logo-floral-nova.png">
+    <link rel="canonical" href="https://presentes.fun/presentes-sob-medida.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7A9E7E',
+                        'primary-dark': '#618565',
+                        secondary: '#D4A373',
+                        'secondary-dark': '#B88A5B',
+                        fundo: '#F9FAFB',
+                        texto: '#111827',
+                        'texto-light': '#4B5563'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-fundo text-texto font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html#hero" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                        <img src="img/logo-floral-nova.png" alt="M & M Ateliê" class="h-16 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-texto-light hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="servicos.html" class="text-primary font-bold transition-colors">Serviços</a>
+                    <a href="index.html#sobre" class="text-texto-light hover:text-primary transition-colors font-medium">Quem Somos</a>
+                    <a href="index.html#faq" class="text-texto-light hover:text-primary transition-colors font-medium">Dúvidas</a>
+                    <a href="contato.html" class="text-texto-light hover:text-primary transition-colors font-medium">Contato</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-primary/30 flex items-center gap-2">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-texto hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" style="display: none;" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white border-t border-gray-100" style="display: none;">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a @click="mobileMenuOpen = false" href="index.html" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Home</a>
+                <a @click="mobileMenuOpen = false" href="servicos.html" class="block px-3 py-3 text-base font-medium text-primary bg-fundo rounded-md">Serviços</a>
+                <a @click="mobileMenuOpen = false" href="index.html#sobre" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Quem Somos</a>
+                <a @click="mobileMenuOpen = false" href="index.html#faq" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Dúvidas Frequentes</a>
+                <a @click="mobileMenuOpen = false" href="contato.html" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative py-24 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <nav class="flex items-center space-x-2 text-sm text-texto-light mb-6">
+                            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                            <span>/</span>
+                            <a href="servicos.html" class="hover:text-primary transition-colors">Serviços</a>
+                            <span>/</span>
+                            <span class="font-semibold text-texto">Presentes Sob Medida</span>
+                        </nav>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-texto leading-tight mb-6">Presentes Sob Medida Exclusivos</h1>
+                        <p class="text-lg md:text-xl text-texto-light mb-8 leading-relaxed">Você traz a história, nós criamos o presente. Uma experiência de curadoria completa para gestos únicos.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/5555996695492?text=Olá! Gostaria de falar sobre um presente exclusivo sob medida." target="_blank" class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-center transition-all shadow-xl shadow-primary/20">
+                                Iniciar Consultoria Exclusiva
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="img/montagem-exclusiva.png" alt="Presentes Sob Medida" class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]">
+                        <!-- Decorative element -->
+                        <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-secondary rounded-full -z-10 opacity-30"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-20 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl font-serif font-bold text-texto mb-6">Como funciona a nossa criação</h2>
+                    <p class="text-texto-light text-lg italic">"Cada detalhe é pensado para refletir a personalidade de quem presenteia e de quem recebe."</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary font-bold text-xl font-serif italic">1</div>
+                        <h3 class="text-xl font-bold text-texto mb-4">Briefing de Afeto</h3>
+                        <p class="text-texto-light leading-relaxed">Conversamos para entender o perfil, os gostos e a história por trás do presente. Tudo começa com a sua intenção.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary font-bold text-xl font-serif italic">2</div>
+                        <h3 class="text-xl font-bold text-texto mb-4">Curadoria de Itens</h3>
+                        <p class="text-texto-light leading-relaxed">Buscamos itens premium e diferenciados que não são encontrados facilmente, criando uma combinação surpreendente.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary font-bold text-xl font-serif italic">3</div>
+                        <h3 class="text-xl font-bold text-texto mb-4">Montagem de Luxo</h3>
+                        <p class="text-texto-light leading-relaxed">A embalagem é parte do presente. Utilizamos caixas rígidas, fitas de seda e finalização artesanal impecável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-secondary p-12 rounded-3xl text-white shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Pronto para criar algo inesquecível?</h2>
+                <p class="text-lg md:text-xl mb-10 opacity-90 leading-relaxed">Fale diretamente com nossa artesã e comece a desenhar o presente perfeito agora mesmo.</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="https://wa.me/5555996695492?text=Olá! Quero criar um presente sob medida exclusivo." target="_blank" class="bg-white text-secondary-dark hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl flex items-center justify-center gap-3">
+                        Conversar agora
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-texto text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <img src="img/logo-floral-nova.png" alt="M & M Ateliê" class="h-24 w-auto mb-4">
+                    <p class="text-gray-400 mb-6 max-w-sm">Cestas personalizadas e presentes afetivos feitos com dedicação em Santa Maria - RS.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 font-serif">Links</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="servicos.html" class="hover:text-primary transition-colors">Serviços</a></li>
+                        <li><a href="index.html#sobre" class="hover:text-primary transition-colors">Quem Somos</a></li>
+                        <li><a href="contato.html" class="hover:text-primary transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 font-serif">Contato</h4>
+                    <p class="text-gray-400 mb-2">Santa Maria - RS (Camobi)</p>
+                    <p class="text-gray-400 mb-2">(55) 99669-5492</p>
+                    <p class="text-gray-400">Seg - Sáb: 08h às 19h</p>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 M & M Ateliê e Cestaria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
