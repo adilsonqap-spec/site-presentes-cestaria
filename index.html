@@ -233,6 +233,7 @@
                 
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary font-bold transition-colors">Home</a>
                     <a href="servicos.html" class="text-texto-light hover:text-primary transition-colors font-medium">Serviços</a>
                     <a href="#sobre" class="text-texto-light hover:text-primary transition-colors font-medium">Quem Somos</a>
                     <a href="#faq" class="text-texto-light hover:text-primary transition-colors font-medium">Dúvidas</a>
@@ -262,6 +263,7 @@
         <!-- Mobile Menu -->
         <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white border-t border-gray-100" style="display: none;">
             <div class="px-4 pt-2 pb-6 space-y-1">
+                <a @click="mobileMenuOpen = false" href="index.html" class="block px-3 py-3 text-base font-medium text-primary bg-fundo rounded-md">Home</a>
                 <a @click="mobileMenuOpen = false" href="servicos.html" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Serviços</a>
                 <a @click="mobileMenuOpen = false" href="#sobre" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Quem Somos</a>
                 <a @click="mobileMenuOpen = false" href="#faq" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Dúvidas Frequentes</a>
