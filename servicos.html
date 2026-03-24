@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços | M&M Ateliê e Cestaria Santa Maria RS</title>
+    <meta name="description" content="Conheça nossos serviços de cestas personalizadas, presentes sob medida e kits corporativos em Santa Maria RS. Detalhes exclusivos para cada ocasião.">
+    
+    <!-- SEO Tags -->
+    <link rel="canonical" href="https://presentes.fun/servicos.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7A9E7E',
+                        'primary-dark': '#618565',
+                        secondary: '#D4A373',
+                        'secondary-dark': '#B88A5B',
+                        fundo: '#F9FAFB',
+                        texto: '#111827',
+                        'texto-light': '#4B5563'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-fundo text-texto font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html#hero" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                        <img src="img/logo-floral-nova.png" alt="M & M Ateliê" class="h-16 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="servicos.html" class="text-primary font-bold transition-colors">Serviços</a>
+                    <a href="index.html#sobre" class="text-texto-light hover:text-primary transition-colors font-medium">Quem Somos</a>
+                    <a href="index.html#faq" class="text-texto-light hover:text-primary transition-colors font-medium">Dúvidas</a>
+                    <a href="contato.html" class="text-texto-light hover:text-primary transition-colors font-medium">Contato</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-primary/30 flex items-center gap-2">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="text-texto hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" style="display: none;" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden bg-white border-t border-gray-100" style="display: none;">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a @click="mobileMenuOpen = false" href="servicos.html" class="block px-3 py-3 text-base font-medium text-primary bg-fundo rounded-md">Serviços</a>
+                <a @click="mobileMenuOpen = false" href="index.html#sobre" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Quem Somos</a>
+                <a @click="mobileMenuOpen = false" href="index.html#faq" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Dúvidas Frequentes</a>
+                <a @click="mobileMenuOpen = false" href="contato.html" class="block px-3 py-3 text-base font-medium text-texto hover:text-primary hover:bg-fundo rounded-md">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="bg-fundo py-16 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <nav class="flex justify-center items-center space-x-2 text-sm text-texto-light mb-4">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <span>/</span>
+                    <span class="font-semibold text-texto">Nossos Serviços</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-texto">Transformando carinho em presentes</h1>
+                <p class="mt-4 text-texto-light text-lg max-w-3xl mx-auto">Confira os detalhes de cada um dos nossos serviços e escolha a melhor forma de surpreender alguém especial ou valorizar os relacionamentos da sua empresa.</p>
+            </div>
+        </section>
+
+        <!-- Service 1: Cestas Especiais -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Datas Comemorativas</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Cestas Personalizadas para Datas Especiais</h2>
+                        <div class="space-y-6 text-texto-light text-lg mb-8 leading-relaxed">
+                            <p>Aniversários, Dia das Mães, Dia dos Namorados ou aquela data que só vocês conhecem. Cada celebração merece um toque único.</p>
+                            <p>Nossas cestas são montadas com uma seleção rigorosa de produtos frescos e de alta qualidade, garantindo que a experiência de quem recebe seja memorável desde o primeiro olhar até a última degustação.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Produtos selecionados conforme o perfil do presenteado.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Decoração temática e laços personalizados.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Entrega agendada em Santa Maria e Camobi.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-primary/20">
+                            Pedir esta cesta agora
+                        </a>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <img src="img/cestas-datas-especiais.png" alt="Cestas personalizadas para datas especiais" class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 2: Presentes sob medida -->
+        <section class="py-20 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <img src="img/montagem-exclusiva.png" alt="Presentes sob medida exclusivos" class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]">
+                    </div>
+                    <div>
+                        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Exclusividade</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Presentes Sob Medida Exclusivos</h2>
+                        <div class="space-y-6 text-texto-light text-lg mb-8 leading-relaxed">
+                            <p>Procura algo que não está em nenhum catálogo? Nós criamos junto com você. Esse serviço é focado na montagem de presentes totalmente originais, baseados na história e no gosto de quem vai receber.</p>
+                            <p>Ideal para gestos de gratidão, boas-vindas ou surpresas inusitadas. O limite é a nossa criatividade unida ao seu carinho.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Curadoria de itens premium e diferenciados.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Embalagens personalizadas de luxo.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Consultoria direta para escolha de cada detalhe.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-primary/20">
+                            Falar sobre meu presente exclusivo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 3: Corporativo -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Para Empresas</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Kits Corporativos Personalizados</h2>
+                        <div class="space-y-6 text-texto-light text-lg mb-8 leading-relaxed">
+                            <p>Valorize seus colaboradores e fidelize seus clientes com brindes que realmente fazem a diferença. Nossos kits corporativos unem sofisticação, bom gosto e a marca da sua empresa.</p>
+                            <p>Entendemos que o presente corporativo é uma extensão da imagem de sua marca, por isso prezamos pelo acabamento impecável e pela pontualidade na entrega.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Personalização com identidade visual da empresa.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Opções escaláveis para volumes pequenos e grandes.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Logística de entrega para empresas em SC e região.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-primary/20">
+                            Solicitar orçamento corporativo
+                        </a>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <img src="img/kits-personalizados-empresa.png" alt="Kits corporativos personalizados" class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 4: Boxes e Mimos -->
+        <section class="py-20 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <img src="img/caixas-lembrancas-criativa.png" alt="Boxes e mimos artesanais" class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]">
+                    </div>
+                    <div>
+                        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Delicadeza</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-texto mb-6">Boxes e Mimos Personalizados</h2>
+                        <div class="space-y-6 text-texto-light text-lg mb-8 leading-relaxed">
+                            <p>As melhores memórias às vezes vêm em caixas pequenas. Nossos "boxes" são lembranças ricas em detalhes, ideais para agradecer, convidar ou apenas lembrar alguém do quanto ela é importante.</p>
+                            <p>Com acabamento artesanal de alto padrão, utilizamos materiais selecionados que transmitem delicadeza e afeto em cada fita amarrada.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Caixas artesanais rígidas ou rústicas.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Combinações harmônicas de mimos e cores.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span>Perfeito para lembrancinhas de luxo e convites especiais.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/5555996695492" target="_blank" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-primary/20">
+                            Ver opções de boxes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-serif font-bold text-texto mb-6">Pronto para presentear com estilo?</h2>
+                <p class="text-xl text-texto-light mb-10">Não importa o tamanho da sua ideia, nós a transformamos em um presente real e inesquecível.</p>
+                <a href="contato.html" class="inline-flex justify-center items-center bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl shadow-primary/30">
+                    Ir para página de contato
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-texto text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <img src="img/logo-floral-nova.png" alt="M & M Ateliê" class="h-24 w-auto mb-4">
+                    <p class="text-gray-400 mb-6 max-w-sm">Cestas personalizadas e presentes afetivos feitos com dedicação em Santa Maria - RS.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 font-serif">Links</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="servicos.html" class="hover:text-primary transition-colors">Serviços</a></li>
+                        <li><a href="index.html#sobre" class="hover:text-primary transition-colors">Quem Somos</a></li>
+                        <li><a href="index.html#faq" class="hover:text-primary transition-colors">Dúvidas</a></li>
+                        <li><a href="contato.html" class="hover:text-primary transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 font-serif">Contato</h4>
+                    <p class="text-gray-400 mb-2">Santa Maria - RS (Camobi)</p>
+                    <p class="text-gray-400 mb-2">(55) 99669-5492</p>
+                    <p class="text-gray-400">Seg - Sáb: 08h às 19h</p>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 M & M Ateliê e Cestaria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
